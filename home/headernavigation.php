@@ -11,14 +11,8 @@
                 <li class="active">
                 <a href="#"><i class="icon-home"></i> Home</a>
                 </li>
-                <li><a href="#"><i class="icon-align-justify"></i> About</a></li>
+                <!-- <li><a href="#"><i class="icon-align-justify"></i> About</a></li> -->
                 <li><a href="#"><i class="icon-envelope"></i> Contact</a></li>
-                <li class="icon">
-                    <a href="#" target="_blank" rel=""><i class="icon-twitter-sign"></i> &nbsp;</a>
-                </li>
-                <li class="icon">
-                    <a href="#" target="_blank" rel=""><i class="icon-facebook-sign"></i> &nbsp;</a>
-                </li>
             </ul>
         </div>
         <div class="clearfix"></div>

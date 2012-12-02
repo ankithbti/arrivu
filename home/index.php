@@ -2,7 +2,7 @@
   ob_start();
   session_start();
   include('headerHome.html');
-  //require_once('resources/dbconfig.php');
+  require_once('../resources/dbconfig.php');
 ?>
 <body>
 <!--
@@ -26,19 +26,40 @@
 	</center>
 </div>
 
-<!-- <center>
-	<div class="hero-unit">
-	  <h1>Under Development</h1>
-	  <p></p>
-	  	<div class="alert alert-error">
-  			We are trying to imrove your experience !!!!
-	  	</div>
-	    <a class="btn btn-primary btn-large" href="http://www.fitied.com" target="_blank">
-	      Till that time check out some cool stuff here
-	    </a>
-	  </p>
+<div class="container">
+	<center>
+	<div class="row">
+	    <div class="span8">
+	    	
+	    	<div class="well-announce">
+                    <h1>Learn in a smart way</h1>
+                   
+            </div>
+	    </div>
+	    <div class="span4">
+	    	<div class="well-subscribe">
+                    <h3>Subusribe to us!!</h3>
+                    <p>Get updated by email:</p>
+                    <form action="#" method="post">
+                        <input type="text" name="EMAIL" class="span3" placeholder="Email address">
+                        <br/>
+                        <input class="btn btn-success fill-width" type="submit" name="subscribe" value="Subscribe">
+                    </form>
+            </div>
+	    </div>
 	</div>
-</center> -->
+	</center>
+</div>
+<div class="clearfix"></div>
+<div class="container">
+	<center>
+		<?php
+			include('footer.php');
+		?>
+	</center>
+</div>
+<div class="clearfix"></div>
+
 </body>
 </html>
 
