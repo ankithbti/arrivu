@@ -1,0 +1,30 @@
+#############################
+##License Details
+#############################
+## If you are seeing this file, you are bound to follow the following temrs and conditions:
+## No part of this source code may be disclosed or transferred outside Arrivu Systems or the current interested parties.
+## No part of this publication may be reproduced or transmitted in any form or by any means, including photography and recording, without the written permission of Arrivu Systems, an application for which should be addressed to the organisation.
+## Such written permission must also be obtained before any part of this publication is stored in a retrieval system of any nature.
+#############################
+## Copyright ©Arrivu Systems (2012). All Rights Reserved.
+#############################
+
+#To redirect it to www domain
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^arrivusystems.com/$
+RewriteRule ^(.*)$ http://www.arrivusystems.com/ [R=301]
+
+#Base Page
+DirectoryIndex home.php
+
+# Disable directory browsing
+# For security reasons, Option all cannot be overridden.
+#Options All -Indexes
+Options ExecCGI Includes IncludesNOEXEC SymLinksIfOwnerMatch -Indexes
+# Directives for custom error pages
+ErrorDocument 403 http://www.fitied.com/403/
+ErrorDocument 404 http://www.fitied.com/404/
+ErrorDocument 500 http://www.fitied.com/500/
+
+#For JNLP support
+AddType application/x-java-jnlp-file jnlp
