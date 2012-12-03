@@ -1,3 +1,4 @@
+/*
 #############################
 ##License Details
 #############################
@@ -8,3 +9,17 @@
 #############################
 ## Copyright ©Arrivu Systems (2012). All Rights Reserved.
 #############################
+*/
+
+/* #763A7A : violate;  #50d07d : green ; #f1684e : orange ;  #0288AD : blue ;
+#00B1B0; :  different blue
+#F37332; :  different orange ;
+#ffd500   yellow
+*/
+
+.fullscreen {
+	width: 700px;
+	min-height:300px;
+	margin-bottom:0px;
+	margin-top: 10px;
+}
